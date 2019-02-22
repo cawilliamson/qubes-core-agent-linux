@@ -39,4 +39,4 @@ case "$(stat -Lc %t:%T /dev/mapper/dmroot)" in
         exit 1
         ;;
 esac
-resize2fs /dev/mapper/dmroot
+xfs_growfs /dev/mapper/dmroot

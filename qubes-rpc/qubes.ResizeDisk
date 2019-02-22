@@ -8,7 +8,7 @@ case $disk_name in
     private)
         # force some read to refresh device size
         head /dev/xvdb > /dev/null
-        resize2fs /dev/xvdb
+        xfs_growfs /dev/xvdb
         ;;
     root)
         # force some read to refresh device size
